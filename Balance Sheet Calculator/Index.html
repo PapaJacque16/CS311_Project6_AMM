@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content="width = device - width, initial-scale = 1.0">
+    <title>Balance Sheet Calculator</title>
+    <link href = "css/Style.css" rel = "stylesheet" type = "text/css">
+</head>
+   
+<body id="body">
+
+    <div class="=header">
+        <img src="img/Bellarmine-crest.png" alt="Bellarmine Crest">
+        <H1> Bellarmine Financials - Balance Sheet Calculator </H1>
+    </div>
+    </body>
+
+    <body>
+        <div class="container">
+            <H2 id="assetsHeading" class="heading">Assets</H2>
+            <H2 id="liabilitiesHeading" class="heading">Liabilities</H2>
+
+            <div id="currentAssets">
+                <div id="currentassetsHeading" class="heading">Current Assets</div>
+                <div id="caButton" class="caButton">
+                    <button id="currentAssetsButton" onclick="addShowAssFieldsEvent()">Add Current Assets</button>
+                </div>
+            </div>
+
+            <div id="currentLiabilities">
+                <div id="currentliabHeading" class="heading">Current Liabilities</div>
+                <div id="clButton" class="clButton">
+                    <button id="currentLiabButton" onclick="addShowCurFieldsEvent()">Add Current Liabilities</button>
+                </div>
+            </div>
+
+            <div id="investmentProperty">
+                <div id="investpropHeading" class="heading">Investment Property & Equipment</div>
+                <div id="clButton" class="clButton">
+                    <button id="investpropButton" onclick="addShowInvFieldsEvent()">Add Investment Property & Equipment</button>
+                </div>
+            </div>
+
+            <div id="longtermLiabilities">
+                <div id="longtermliabHeading" class="heading">Long-Term Liabilities</div>
+                <div id="longtermliabButton" class="longtermliabButton">
+                    <button id="longtermliabButton" onclick="addShowLonFieldsEvent()">Add Long-Term Liabilities</button>
+                </div>
+            </div>
+
+            <div id="intangibles">
+                <div id="intangiblesHeading" class="heading">Intangibles</div>
+                <div id="intangablesButton" class="intangablesButton">
+                    <button id="intangiblesButton" onclick="addShowIntFieldsEvent()">Add Intangibles</button>
+                </div>
+            </div>
+
+            <div id="position">
+                <div id="totPositionHeading" class="heading">Total Position</div>
+                <button id="calculatePosition" onclick="addShowPosFieldsEvent()">Calculate Position</button>
+                <div id="totalassetsHeading" class="heading">Total Assets: $</div>
+                <div id="totalliabHeading" class="heading">Total Liabilities: $</div>
+                <div id="positionHeading" class="heading">Position: $ </div>
+            </div>
+
+        </div>
+
+    </body>
+
+    <div class="footer"> &copy Bellarmine Univeristy 2022  </div>
+    <script src="js/index.js" type="text/javascript"></script>
+    
+</html>
